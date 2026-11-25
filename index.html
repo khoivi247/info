@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio cá nhân của Linh Khôi Vĩ — developer yêu thích xây dựng các công cụ hữu ích.">
+    <title>Linh Khôi Vĩ — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="introAudio" src="loichao.mp3" preload="auto"></audio>
+    <div class="intro-overlay" id="introOverlay" role="dialog" aria-modal="true" aria-label="Giới thiệu Linh Khôi Vĩ">
+        <div class="intro-content">
+            <p class="intro-kicker">PERSONAL PORTFOLIO <span>•</span> 2026</p>
+            <div class="intro-seal" aria-hidden="true">
+                <span class="seal-orbit orbit-one"></span>
+                <span class="seal-orbit orbit-two"></span>
+                <span class="seal-core">&lt;/&gt;</span>
+            </div>
+            <p class="intro-overline">WELCOME TO MY SPACE</p>
+            <h1 class="intro-name">LINH KHÔI VĨ</h1>
+            <p class="intro-role">DEVELOPER <span>·</span> CREATOR <span>·</span> BUILDER</p>
+            <p class="intro-audio-status" id="introAudioStatus" aria-live="polite"><i class="bi bi-volume-up"></i> Lời chào bằng âm thanh</p>
+            <button class="intro-skip" id="introSkip" type="button">Khám phá portfolio <i class="bi bi-arrow-right"></i></button>
+        </div>
+        <span class="intro-corner corner-top"></span>
+        <span class="intro-corner corner-bottom"></span>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="#about" aria-label="Vĩ Dev, đầu trang">
+                <span class="brand-mark" aria-hidden="true"><span>&lt;</span><span>&gt;</span></span>
+                <span class="brand-name">Vĩ<span>.dev</span></span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="primaryNav">
+                <i class="bi bi-list"></i>
+            </button>
+            <nav class="header-links" id="primaryNav" aria-label="Điều hướng chính">
+                <a href="#about">Tổng quan</a>
+                <a href="#projects">Dự án</a>
+                <a href="#skills">Kỹ năng</a>
+                <a href="#contact">Liên hệ</a>
+            </nav>
+            <a class="header-contact" href="mailto:khoiv245@gmail.com">Kết nối <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="hero" id="about">
+            <div class="hero-copy">
+                <div class="eyebrow"><span class="status-dot"></span> DEVELOPER PORTFOLIO <span class="eyebrow-year">2026</span></div>
+                <p class="hello">Xin chào, mình là</p>
+                <h1>Linh Khôi Vĩ<span class="hero-period">.</span></h1>
+                <h2>Code. Create. Innovate.</h2>
+                <p class="hero-description">i'm a freedom developer and i have a passion for creating innovative solutions.</p>
+
+                <div class="hero-facts">
+                    <div class="fact"><strong>04</strong><span>Dự án cá nhân</span></div>
+                    <div class="fact"><strong>03</strong><span>Lĩnh vực yêu thích</span></div>
+                    <div class="fact"><strong>VN</strong><span>Việt Nam</span></div>
+                </div>
+
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#projects">Khám phá dự án <i class="bi bi-arrow-right"></i></a>
+                    <a class="button button-light" href="https://github.com/khoividz" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+                <div class="hero-note"><i class="bi bi-stars"></i> Luôn tò mò. Luôn thử nghiệm. Luôn học hỏi.</div>
+            </div>
+
+            <div class="dashboard-wrap" aria-label="Tổng quan portfolio">
+                <div class="floating-tag tag-top"><i class="bi bi-lightning-charge-fill"></i> BUILDING IDEAS</div>
+                <div class="dashboard-panel">
+                    <div class="panel-top">
+                        <div class="window-dots"><span></span><span></span><span></span></div>
+                        <span class="panel-path">khoividz / overview</span>
+                        <i class="bi bi-three-dots"></i>
+                    </div>
+                    <div class="panel-heading">
+                        <div>
+                            <span class="panel-overline">PERSONAL DASHBOARD</span>
+                            <h3>Chào Vĩ <span>✦</span></h3>
+                        </div>
+                        <div class="profile-avatar">KV</div>
+                    </div>
+                    <div class="profile-summary">
+                        <span class="profile-name">Linh Khôi Vĩ</span>
+                        <span class="profile-role">Developer · Việt Nam</span>
+                    </div>
+
+                    <div class="panel-metrics">
+                        <div class="metric-card">
+                            <span class="metric-label">PROJECTS</span>
+                            <strong>04</strong>
+                            <span class="metric-detail"><i class="bi bi-folder2-open"></i> Personal builds</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-label">FOCUS AREAS</span>
+                            <strong>03</strong>
+                            <span class="metric-detail"><i class="bi bi-grid"></i> Web · Vision · Robotics</span>
+                        </div>
+                    </div>
+
+                    <div class="panel-section-head"><span>Đang xây dựng</span><span class="live-label"><i></i> IN PROGRESS</span></div>
+                    <div class="build-item">
+                        <span class="build-icon"><i class="bi bi-hand-index-thumb"></i></span>
+                        <span class="build-copy"><strong>Vision Studio</strong><small>Gesture recognition · Python</small></span>
+                        <i class="bi bi-arrow-up-right build-arrow"></i>
+                    </div>
+                    <div class="stack-row"><span>PYTHON</span><span>JAVASCRIPT</span><span>OPENCV</span><span>ESP32</span></div>
+                    <div class="activity-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                    <div class="activity-caption"><span>CODE · LEARN · REPEAT</span><span>ALWAYS EXPLORING</span></div>
+                </div>
+                <div class="floating-tag tag-bottom"><i class="bi bi-code-slash"></i> MADE WITH CURIOSITY</div>
+            </div>
+
+            <div class="hero-decoration decoration-one"></div>
+            <div class="hero-decoration decoration-two"></div>
+        </section>
+
+        <div class="ticker" aria-label="Công nghệ và lĩnh vực">
+            <div class="ticker-track">
+                <span>CODE</span><i>✳</i><span>CREATE</span><i>✳</i><span>LEARN</span><i>✳</i><span>PYTHON</span><i>✳</i><span>JAVASCRIPT</span><i>✳</i><span>COMPUTER VISION</span><i>✳</i><span>ROBOTICS</span><i>✳</i>
+                <span>CODE</span><i>✳</i><span>CREATE</span><i>✳</i><span>LEARN</span><i>✳</i><span>PYTHON</span><i>✳</i><span>JAVASCRIPT</span><i>✳</i><span>COMPUTER VISION</span><i>✳</i><span>ROBOTICS</span><i>✳</i>
+            </div>
+        </div>
+
+        <section class="projects-section section-block" id="projects">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">SELECTED BUILDS <span>✳</span></p>
+                    <h2>Mình đang làm gì<span>?</span></h2>
+                </div>
+                <p class="section-intro">Một vài dự án cá nhân mình đã và đang xây dựng — mỗi dự án là một cơ hội để học thêm điều mới.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card project-vision">
+                    <div class="project-art"><span class="art-orbit"></span><i class="bi bi-hand-index-thumb"></i><span class="art-label">VISION / 01</span></div>
+                    <div class="project-info">
+                        <div class="project-category">COMPUTER VISION <span>01</span></div>
+                        <h3>Vision Studio</h3>
+                        <p>Ứng dụng camera thời gian thực: nhận diện cử chỉ tay, vẽ trong không khí và điều khiển chuột.</p>
+                        <div class="project-tags"><span>Python</span><span>OpenCV</span><span>MediaPipe</span></div>
+                    </div>
+                </article>
+                <article class="project-card project-robot">
+                    <div class="project-art"><span class="robot-wheel wheel-one"></span><span class="robot-wheel wheel-two"></span><span class="robot-body"><i class="bi bi-joystick"></i></span><span class="art-label">ROBOTICS / 02</span></div>
+                    <div class="project-info">
+                        <div class="project-category">ROBOTICS <span>02</span></div>
+                        <h3>Mecanum Wi-Fi Robot</h3>
+                        <p>Robot 4 bánh mecanum được điều khiển bằng giao diện web qua Wi-Fi, tích hợp nhiều servo.</p>
+                        <div class="project-tags"><span>ESP32</span><span>Arduino C++</span><span>Web UI</span></div>
+                    </div>
+                </article>
+                <article class="project-card project-pdf">
+                    <div class="project-art"><span class="pdf-sheet"><i class="bi bi-file-earmark-pdf"></i><b>PDF</b></span><span class="art-label">DESKTOP TOOL / 03</span></div>
+                    <div class="project-info">
+                        <div class="project-category">DESKTOP TOOL <span>03</span></div>
+                        <h3>Image to PDF</h3>
+                        <p>Tiện ích chọn, sắp xếp nhiều ảnh theo thứ tự và xuất thành một file PDF.</p>
+                        <div class="project-tags"><span>Python</span><span>Tkinter</span><span>Pillow</span></div>
+                    </div>
+                </article>
+                <article class="project-card project-racer">
+                    <div class="project-art"><span class="road-lines"></span><i class="bi bi-car-front-fill"></i><span class="art-label">WEB GAME / 04</span></div>
+                    <div class="project-info">
+                        <div class="project-category">WEB GAME <span>04</span></div>
+                        <h3>KV Racer</h3>
+                        <p>Mini game đua xe phong cách neon, thiết kế để chơi trực tiếp trên trình duyệt.</p>
+                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="skills-section" id="skills">
+            <div class="skills-intro">
+                <p class="section-kicker">THE TOOLBOX <span>✳</span></p>
+                <h2>Công cụ mình<br>thường dùng.</h2>
+                <p>Những công nghệ xuất hiện trong các dự án cá nhân của mình.</p>
+            </div>
+            <div class="skills-list">
+                <div class="skill-item"><i class="bi bi-filetype-py"></i><span>Python</span><small>Tools · Vision</small></div>
+                <div class="skill-item"><i class="bi bi-filetype-js"></i><span>JavaScript</span><small>Web · Interaction</small></div>
+                <div class="skill-item"><i class="bi bi-camera-video"></i><span>OpenCV</span><small>Computer Vision</small></div>
+                <div class="skill-item"><i class="bi bi-cpu"></i><span>ESP32</span><small>Robotics</small></div>
+                <div class="skill-item"><i class="bi bi-filetype-html"></i><span>HTML &amp; CSS</span><small>Frontend</small></div>
+                <div class="skill-item"><i class="bi bi-git"></i><span>Git &amp; GitHub</span><small>Workflow</small></div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-mark"><i class="bi bi-chat-dots"></i></div>
+            <div>
+                <p class="section-kicker">HAVE AN IDEA? <span>✳</span></p>
+                <h2>Cùng làm điều<br>thú vị nhé.</h2>
+                <p>Mình luôn sẵn sàng trò chuyện về code, sản phẩm và những ý tưởng mới.</p>
+            </div>
+            <div class="contact-actions">
+                <a class="button button-yellow" href="mailto:khoiv245@gmail.com">khoiv245@gmail.com <i class="bi bi-arrow-up-right"></i></a>
+                <a class="github-link" href="https://github.com/khoividz" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> github.com/khoividz</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="#about"><span class="brand-mark" aria-hidden="true"><span>&lt;</span><span>&gt;</span></span><span class="brand-name">Vĩ<span>.dev</span></span></a>
+        <span>© <span id="currentYear">2026</span> Linh Khôi Vĩ. Built with curiosity.</span>
+        <a href="#about">Lên đầu trang <i class="bi bi-arrow-up"></i></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
